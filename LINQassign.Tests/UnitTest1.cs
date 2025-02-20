@@ -3,8 +3,12 @@
 public class UnitTest1
 {
     [Fact]
-    public void Test1()
+    public void ReturnEvenNUmberstest()
     {
+       ArrayFunctions arrayFunctions = new ArrayFunctions();
 
+       int[] evens = arrayFunctions.returnEvenNumbers();
+
+       Console.WriteLine(evens);
     }
 }
