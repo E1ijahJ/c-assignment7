@@ -19,6 +19,17 @@ public class UnitTest1
 
        int[] odd = arrayFunctions.returnOddShuffled();
 
-       Console.WriteLine(string.Join(",",odd));
+       ///Console.WriteLine(string.Join(",",odd));
+    }
+
+
+    [Fact]
+    public void ReturnStatstest()
+    {
+       ArrayFunctions arrayFunctions = new ArrayFunctions();
+
+       double[] stats = arrayFunctions.getStats();
+
+       Console.WriteLine("Average 1. , Minimum 2. , MAximum 3.  "+ string.Join(" , ",stats));
     }
 }
